@@ -1,0 +1,89 @@
+<!--
+<p>home works!</p>
+
+<div >
+    <div *ngFor =" let item of name">
+        {{item}} 
+
+    </div>
+</div>
+
+ <p> home worksf</p>
+<div>
+ <p> my name {{myname}} your name {{yourname}} </p>
+  @for(user of users; track user.id) {
+    <p>{{ user.name }}</p>
+    }
+ @for( a of fruits ; track a)
+ {
+
+     <p>{{ a }}</p>
+ }
+<br>
+
+@for(b of schoolmate ; track b)
+
+{
+
+     <p>{{ b }}</p>
+ }
+
+</div>
+
+<div disabled >
+
+    <input
+        type="text"
+        id="studentNic"
+        class="form-control"
+        desabled
+        name="studentNic"
+      />
+ <section (mouseover)="showMsg()">dddd</section>
+ {{ message }}
+
+ <p> checking {{strName}}</p>
+
+ <p> checking </p>
+
+ 
+</div>
+-->
+<div>
+   <p> checking {{strName}}</p>
+ <!--
+ <h1>API Response</h1>
+    <div *ngIf="data">
+      <p><strong>Status Code:</strong> {{ data.StatusCode }}</p>
+      <p><strong>Data:</strong> {{ data.Data }}</p>
+      <li *ngFor="let role of data.Data?.Data">
+    {{ role.IROLE_ID }} - {{ role.SZROLE_NAME }}
+  </li>
+      <div *ngIf="data.Data">
+       
+      
+        <p><strong>strRoleName:</strong> {{ Role.strRoleName }}</p>
+        <p><strong>strRoleDes:</strong>  {{ Role.strRoleDes }}</p>
+        <p><strong>strSysCode:</strong> {{ Role.strSysCode }}</p>
+        <p><strong>iIsUserWise:</strong> {{ Role.iIsUserWise }}</p>
+        <p><strong>strCreateUser:</strong> {{ Role.strCreateUser }}</p>
+        <p><strong>dtCreateDate:</strong> {{ Role.dtCreateDate }}</p>
+     
+    </div>
+ 
+
+      <p><strong>Message:</strong> {{ data.Message }}</p>
+    </div>
+    <div *ngIf="error" style="color: red;">Error: {{ error }}</div>
+ -->
+       <div>
+       <p>Status: {{ response?.StatusCode }} — {{ response?.Message }}</p>
+       
+ <ul *ngIf="response?.Data?.length">
+
+    </ul>
+  <li *ngFor="let role of data2">
+    Id: {{ role.iRoleID }} - name: {{ role.strRoleName }} , Des : {{ role.strRoleDes }}, sysCode : {{ role.strSysCode }}
+  </li>
+    </div>
+</div>

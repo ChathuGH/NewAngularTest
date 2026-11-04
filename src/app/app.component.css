@@ -1,0 +1,44 @@
+.cHeader {
+     
+    top : 0;
+    position: fixed;
+    /*background-color: burlywood;*/
+    height: 80px;
+    width: 100%;
+  
+}
+
+.hc {     
+    
+   color : blueviolet;
+}
+.hbg{
+ background-color: rgb(222, 221, 135);
+}
+
+.cLeft {
+    top : 80px;
+    position: fixed;
+    background-color: aqua;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.cContent {
+    top : 80px;
+    position: fixed;
+    left: 20%;
+    background-color: grey;
+    width: 80%;
+    bottom: 45px;
+    float: left;
+    overflow-y: auto;
+}
+
+.cFooter {
+    position: fixed;
+    width:  100%;
+    background-color: darkorange;
+    bottom:0;
+}

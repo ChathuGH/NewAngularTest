@@ -1,0 +1,64 @@
+
+<div class="container mt-5">
+   
+    <form (ngSubmit)="onSubmit()" #studentForm="ngForm">
+     <p>Student data</p>
+     <div class="mb-3">
+      <label for="studentNic" class="form-label">Student NIC</label>
+      <input
+        type="text"
+        id="studentNic"
+        class="form-control"
+        required
+        [(ngModel)]="student.studentNic"
+        name="studentNic"
+      />
+    </div>
+     <div class="mb-3">
+      <label for="studentName" class="form-label">Student Name</label>
+      <input
+        type="text"
+        id="studentName"
+        class="form-control"
+        required
+        [(ngModel)]="student.studentName"
+        name="studentName"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary" >
+      Submit
+    </button>
+     </form>
+</div>
+
+<!--div class="container mt-5">
+  <form (ngSubmit)="onSubmit()" #studentForm="ngForm">
+    <div class="mb-3">
+      <label for="studentNic" class="form-label">Student NIC</label>
+      <input
+        type="text"
+        id="studentNic"
+        class="form-control"
+        required
+        [(ngModel)]="student.studentNic"
+        name="studentNic"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="studentName" class="form-label">Student Name</label>
+      <input
+        type="text"
+        id="studentName"
+        class="form-control"
+        required
+        [(ngModel)]="student.studentName"
+        name="studentName"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!studentForm.form.valid">
+      Submit
+    </button>
+  </form>
+</div-->
